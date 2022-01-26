@@ -541,30 +541,32 @@
 // //c)
 // let str = "";
 // let inputValue = +prompt("Enter Number from 1 to 32767");
-// // if(inputValue > 32767  || inputValue < 1) {
-// //      console.log("invalid number");
-// //      return;
-// // }
-// while(inputValue) {
-//     let num = getRemainderAToBIntegerType(inputValue, 10);
-//     str += num;
-//     str += "  ";
-//     inputValue = divideAtoBIntegerType(inputValue, 10)
+// if(inputValue > 32767  || inputValue < 1) {
+//      console.log("invalid number");
+    
+// } else {
+//     while(inputValue) {
+//         let num = getRemainderAToBIntegerType(inputValue, 10);
+//         str += num;
+//         str += "  ";
+//         inputValue = divideAtoBIntegerType(inputValue, 10)
 
 
-// }
-
-// function reverse(s) {
-//     let i = s.length,
-//         o = '';
-//     while (i > 0) {
-//       o += s.substring(i - 1, i);
-//       i--;
 //     }
-//     return o;
-//   }
-// str = reverse(str)
-// console.log(str)
+
+
+//     function reverse(s) {
+//         let i = s.length,
+//             o = '';
+//         while (i > 0) {
+//         o += s.substring(i - 1, i);
+//         i--;
+//         }
+//         return o;
+//     }
+//     str = reverse(str)
+//     console.log(str)
+// }
 
 //3.26
 // function timeReturnSecondsfromlast12clock(hours, minutes, seconds ) {
