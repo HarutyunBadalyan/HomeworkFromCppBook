@@ -462,111 +462,111 @@
 // })
 
 //4.26 ավելի շատ в лоб
-let chessBoard = [
-    [0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0],
-];
+// let chessBoard = [
+//     [0,0,0,0,0,0,0,0],
+//     [0,0,0,0,0,0,0,0],
+//     [0,0,0,0,0,0,0,0],
+//     [0,0,0,0,0,0,0,0],
+//     [0,0,0,0,0,0,0,0],
+//     [0,0,0,0,0,0,0,0],
+//     [0,0,0,0,0,0,0,0],
+//     [0,0,0,0,0,0,0,0],
+// ];
 
-queensPositionList = []; //first element represnet row second element represent column 
-while(queensPositionList.length < 8) {
-for(let w = 0; w < 8; w++) {
-    let queenPosition = [0,0];
-     queenPosition[0] = w;
-     queenPosition[1] = Math.floor(Math.random() * 8);
-         console.log(chessBoard[queenPosition[0]][queenPosition[1]],queenPosition)
-    while(chessBoard[queenPosition[0]][queenPosition[1]] === 1) {
-        queenPosition[1] = Math.floor(Math.random() * 8);
+// queensPositionList = []; //first element represnet row second element represent column 
+// while(queensPositionList.length < 8) {
+// for(let w = 0; w < 8; w++) {
+//     let queenPosition = [0,0];
+//      queenPosition[0] = w;
+//      queenPosition[1] = Math.floor(Math.random() * 8);
+//          console.log(chessBoard[queenPosition[0]][queenPosition[1]],queenPosition)
+//     while(chessBoard[queenPosition[0]][queenPosition[1]] === 1) {
+//         queenPosition[1] = Math.floor(Math.random() * 8);
     
-        if(chessBoard[7].indexOf(0) === -1) {
-            queensPositionList = [];
-        chessBoard = [
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-        ];
-           break;
-        }
-        if(chessBoard[w].indexOf(0) === -1) {
-            queensPositionList = [];
-        chessBoard = [
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-        ];
-            break;
-         }
-    }
-    if(chessBoard[7].indexOf(0) === -1) {
-        queensPositionList = [];
-        chessBoard = [
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0],
-        ];
-        break;
-     }
+//         if(chessBoard[7].indexOf(0) === -1) {
+//             queensPositionList = [];
+//         chessBoard = [
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//         ];
+//            break;
+//         }
+//         if(chessBoard[w].indexOf(0) === -1) {
+//             queensPositionList = [];
+//         chessBoard = [
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//         ];
+//             break;
+//          }
+//     }
+//     if(chessBoard[7].indexOf(0) === -1) {
+//         queensPositionList = [];
+//         chessBoard = [
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//             [0,0,0,0,0,0,0,0],
+//         ];
+//         break;
+//      }
       
-   queensPositionList.push(queenPosition)
+//    queensPositionList.push(queenPosition)
     
-        for(let i = 0; i < chessBoard.length; i++) {
+//         for(let i = 0; i < chessBoard.length; i++) {
             
-            //console.log(queenPosition)
-            for(let j = 0; j < chessBoard[i].length; j++) {
+//             //console.log(queenPosition)
+//             for(let j = 0; j < chessBoard[i].length; j++) {
 
-                if(i === queenPosition[0]) {
-                    chessBoard[i][j] = 1;
+//                 if(i === queenPosition[0]) {
+//                     chessBoard[i][j] = 1;
                     
-                }
-                if(j === queenPosition[1]) {
-                    chessBoard[i][j] = 1;
+//                 }
+//                 if(j === queenPosition[1]) {
+//                     chessBoard[i][j] = 1;
                 
-                }
-                if(i - queenPosition[0] === j - queenPosition[1] || Math.abs(i - queenPosition[0]) === Math.abs(j - queenPosition[1]) ) {
-                    chessBoard[i][j] = 1;
-                }
+//                 }
+//                 if(i - queenPosition[0] === j - queenPosition[1] || Math.abs(i - queenPosition[0]) === Math.abs(j - queenPosition[1]) ) {
+//                     chessBoard[i][j] = 1;
+//                 }
             
-            }
-        }
+//             }
+//         }
         
-    }
+//     }
     
-}
-let str = "";
-chessBoard.forEach(item => {
-    item.forEach(item2 => {
-        if(item2 === 1) {
-            str+="*";
-        }
-        else {
-            str+=" "
-        }
-    })
-    str+="\n";
-})
+// }
+// let str = "";
+// chessBoard.forEach(item => {
+//     item.forEach(item2 => {
+//         if(item2 === 1) {
+//             str+="*";
+//         }
+//         else {
+//             str+=" "
+//         }
+//     })
+//     str+="\n";
+// })
 
-console.log(queensPositionList,queensPositionList.length)
-console.table(chessBoard)
+// console.log(queensPositionList,queensPositionList.length)
+// console.table(chessBoard)
 
 
 
